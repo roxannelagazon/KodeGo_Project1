@@ -213,8 +213,8 @@ footer {
         -webkit-background-size: contain;
     }
     .heading {
-        font-size: 60px;
-        line-height: 80px;
+        font-size: 70px;
+        line-height: 70px;
     }
     .col-image {
         order: 1 !important;
@@ -226,5 +226,8 @@ footer {
         background-color: #000;
         margin-top: 6px;
         padding: 20px;
+    }
+    .divImage {
+        height: 160px;
     }
 }

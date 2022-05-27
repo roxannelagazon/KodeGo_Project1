@@ -1,0 +1,230 @@
+body {
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    line-height: 1.7em;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.section-2,
+.section-11 {
+    padding: 100px 0px;
+}
+
+header {
+    background-color: rgb(45,45, 45 , .5);
+    max-height: 125px;
+}
+.text-gold {
+    color: #c6a530;
+}
+.navbar-brand img {
+    width: 200px;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(198 165 48)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.nav-link {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #c6a530;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: #c6a530;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #c6a530;
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.btn-schedule {
+    background-color: #c6a530;
+    border: 2px solid #c6a530;
+}
+
+.btn-schedule:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-schedule::after {
+    display: none;
+}
+
+.hero {
+    margin-top: -125px;
+    background-image: url(../images/hero-banner.jpg);
+    background-color :rgb(47, 47, 47, .3);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    align-items: center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.inner {
+    margin-top: -125px;
+    background-image: url(../images/inner.jpg);
+    background-color :rgb(47, 47, 47, .3);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    padding-top: 220px;
+    padding-bottom: 100px;
+}
+
+.inner.location {
+    background-image: url(../images/inner.jpg);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.inner.contact {
+    background-image: url(../images/inner.jpg);
+}
+
+.touristspot,
+.adventure {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.adventure {
+    background-image: url(../images/img.jpeg);
+    background-color: #00000070;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.heading {
+    font-family: 'Cookie', cursive;
+    font-size: 80px;
+    line-height: 100px;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+.bg-blue {
+    background-color: #4285f4;
+}
+
+.tourism {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.tourism {
+    background-image: url(../images/inner-background.jpeg);
+    background-color: #00000070;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.bg-grey {
+    background-color: #f7f7f7;
+}
+footer {
+    background-color: #2d2d2d
+}
+
+.divImage {
+    height: 205px;
+    overflow: hidden;
+}
+
+.divImage img {
+    object-fit: fill;
+}
+
+.divider {
+    height: 5px;
+    width: 100px;
+    background-color: #c6a530;
+    display: block;
+    margin: 10px auto 0 auto;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width:480px) {
+    .hero {
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+    .heading {
+        line-height: 80px;
+    }
+    .col-image {
+        order: 1 !important;
+    }
+    .row > div {
+        order: 2
+    }
+    .navbar-collapse {
+        background-color: #000;
+        margin-top: 6px;
+        padding: 20px;
+    }
+}
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px)  {
+    .locations {
+        background-image: url(../images/mobile-bg.jpeg);
+        background-attachment: unset;
+        background-size: contain;
+        -moz-background-size: contain;
+        -webkit-background-size: contain;
+    }
+    .heading {
+        font-size: 60px;
+        line-height: 80px;
+    }
+    .col-image {
+        order: 1 !important;
+    }
+    .row > div {
+        order: 2
+    }
+    .navbar-collapse {
+        background-color: #000;
+        margin-top: 6px;
+        padding: 20px;
+    }
+}
